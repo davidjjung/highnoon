@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/davidjjung/highnoon/issues"
+license = "MIT License"
+
+[[mixins]]
+config = "high_noon.mixins.json"
+
+[[mods]]
+modId = "high_noon"
+version = "${mod_version}"
+logoFile = "logo.png"
+itemIcon = "minecraft:dirt"
+configBackground = "minecraft:textures/block/dirt.png"
+authors = "DavigJ"
+credits = ""
+displayURL = "https://github.com/davidjjung/high-noon"
+displayName = "High Noon"
+description = '''
+    An opinionated add-on to Buzzier Bees that tweaks Mooblooms and the Sunny status effect.
+    '''
+
+[[dependencies.high_noon]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${mc_version}]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.high_noon]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neoforge},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.high_noon]]
+modId = "buzzier_bees"
+type = "required"
+versionRange = "[7.0.1,)"
+ordering = "AFTER"
+side = "BOTH"

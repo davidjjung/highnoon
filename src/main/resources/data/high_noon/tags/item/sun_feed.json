@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:sunflower",
+      "required": false
+    },
+    {
+      "id": "spawn:sunflower",
+      "required": false
+    }
+  ]
+}

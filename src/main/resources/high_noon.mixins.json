@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "package": "com.davigj.high_noon.core.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "refmap": "high_noon.refmap.json",
+  "mixins": [
+    "AgeableMobMixin",
+    "BBEventsMixin",
+    "BeehiveBlockEntityMixin",
+    "BeeMixin",
+    "ButtercupBlockMixin",
+    "EntityMixin",
+    "IguanaBaskGoalMixin",
+    "IguanaPreferredBaskGoalMixin",
+    "MoobloomMixin",
+    "SunflowerBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

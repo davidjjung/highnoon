@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "high_noon": {
+      "trigger": "high_noon:high_noon"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.high_noon.adventure.high_noon.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "advancements.high_noon.adventure.high_noon.title"
+    }
+  },
+  "requirements": [
+    [
+      "high_noon"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

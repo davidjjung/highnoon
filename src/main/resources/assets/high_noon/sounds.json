@@ -1,0 +1,20 @@
+{
+  "item.buttercup.pause": {
+    "sounds": [
+      {
+        "name": "high_noon:item/buttercup/pause",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.high_noon.item.buttercup.pause"
+  },
+  "item.buttercup.resume": {
+    "sounds": [
+      {
+        "name": "high_noon:item/buttercup/resume",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.high_noon.item.buttercup.resume"
+  }
+}
