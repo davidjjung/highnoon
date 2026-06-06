@@ -17,7 +17,9 @@ public class HNConfig {
         public final ModConfigSpec.ConfigValue<Boolean> phantomsAttackSunnyPlayers;
         public final ModConfigSpec.ConfigValue<Boolean> sunnyBees;
         public final ModConfigSpec.ConfigValue<Boolean> iguanasBask;
+        public final ModConfigSpec.ConfigValue<Boolean> sunfishBask;
         public final ModConfigSpec.ConfigValue<Boolean> sunstoneSunny;
+        public final ModConfigSpec.ConfigValue<Boolean> eyeblossomShut;
         public final ModConfigSpec.ConfigValue<Boolean> sunFeed;
         public final ModConfigSpec.ConfigValue<Boolean> sunnyParticle;
         public final ModConfigSpec.ConfigValue<Integer> sunDuration;
@@ -53,9 +55,13 @@ public class HNConfig {
             builder.pop();
             builder.push("compat");
             builder.push("spawn");
-            iguanasBask = builder.comment("Iguanas from Spawn afflicted with Sunny can bask even during nighttime").define("Iguanas bask on sunny nights", true);
+            iguanasBask = builder.comment("Iguanas afflicted with Sunny can bask even during nighttime").define("Iguanas bask on sunny nights", true);
+            sunfishBask = builder.comment("Sunfish afflicted with Sunny can bask even during nighttime").define("Sunfish bask on sunny nights", true);
             sunstoneSunny = builder.comment("Entities standing on a sunstone block from Spawn incur the Sunny effect").define("Sunstones sunny", true);
             sunflowersFollowMooblooms = builder.comment("Sunflowers from Spawn follow Mooblooms").define("Sunflowers follow mooblooms", true);
+            builder.pop();
+            builder.push("vanillabackport");
+            eyeblossomShut = builder.comment("Eyeblossoms shut near Mooblooms").define("Eyeblossoms shut", true);
             builder.pop();
             builder.pop();
             builder.pop();

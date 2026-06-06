@@ -11,9 +11,11 @@
     "BeeMixin",
     "ButtercupBlockMixin",
     "EntityMixin",
+    "EyeblossomBlockMixin",
     "IguanaBaskGoalMixin",
     "IguanaPreferredBaskGoalMixin",
     "MoobloomMixin",
+    "SunfishBaskingGoalMixin",
     "SunflowerBlockMixin"
   ],
   "client": [
