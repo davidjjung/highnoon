@@ -1,7 +1,6 @@
 package com.davigj.high_noon.core.mixin;
 
 import com.davigj.high_noon.core.HNConfig;
-import com.davigj.high_noon.core.other.HNEvents;
 import com.teamabnormals.buzzier_bees.core.other.BBEvents;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;

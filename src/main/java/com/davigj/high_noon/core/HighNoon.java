@@ -3,6 +3,7 @@ package com.davigj.high_noon.core;
 import com.davigj.high_noon.core.registry.HNCriteriaTriggers;
 import com.davigj.high_noon.core.registry.HNParticleTypes;
 import com.davigj.high_noon.core.registry.HNSoundEvents;
+import com.mojang.serialization.Codec;
 import com.teamabnormals.blueprint.common.world.storage.tracking.TrackedData;
 import com.teamabnormals.blueprint.common.world.storage.tracking.TrackedDataManager;
 import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
@@ -17,10 +18,10 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 @Mod(HighNoon.MOD_ID)
 public class HighNoon {
     public static final String MOD_ID = "high_noon";
-    public static final TrackedData<Boolean> BABIED = TrackedData.Builder.create(ByteBufCodecs.BOOL, () -> false).enablePersistence().build();
-    public static final TrackedData<Integer> BUTTER_DOWN = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enablePersistence().build();
-    public static final TrackedData<Integer> BUTTER_UP = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enablePersistence().build();
-    public static final TrackedData<Integer> SUNNY_TIMER = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enablePersistence().build();
+    public static final TrackedData<Boolean> BABIED = TrackedData.Builder.create(ByteBufCodecs.BOOL, () -> false).enableSaving(Codec.BOOL.fieldOf("Boolean")).build();
+    public static final TrackedData<Integer> BUTTER_DOWN = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enableSaving(Codec.INT.fieldOf("Integer")).build();
+    public static final TrackedData<Integer> BUTTER_UP = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enableSaving(Codec.INT.fieldOf("Integer")).build();
+    public static final TrackedData<Integer> SUNNY_TIMER = TrackedData.Builder.create(ByteBufCodecs.INT, () -> -1).enableSaving(Codec.INT.fieldOf("Integer")).build();
     public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
 
     public HighNoon(IEventBus bus, ModContainer container) {

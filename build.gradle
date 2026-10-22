@@ -49,9 +49,11 @@ dependencies {
     implementation("maven.modrinth:blueprint:5JOCYuQM")
     implementation("maven.modrinth:buzzier-bees:Y12rtT96")
 
-    implementation("maven.modrinth:spawn-mod:kmNDEibJ")
+    implementation("maven.modrinth:spawn-mod:OgmUYgeL")
+    implementation("maven.modrinth:teallib:lZTBRemW")
     implementation("maven.modrinth:vanillabackport:GnQwRIY8")
     implementation("maven.modrinth:platform:v7P0nBi2")
+    implementation("maven.modrinth:jade:eYz2YBGT")
 
     compileOnly("mezz.jei:jei-${project.mc_version}-neoforge-api:${project.jei}")
     runtimeOnly("mezz.jei:jei-${project.mc_version}-neoforge:${project.jei}")

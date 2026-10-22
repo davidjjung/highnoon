@@ -2,7 +2,7 @@ package com.davigj.high_noon.core.mixin;
 
 import com.davigj.high_noon.core.HNConfig;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import com.ninni.spawn.server.entity.mob.Sunfish;
+import com.ninni.spawn.server.entity.mob.fish.Sunfish;
 import com.teamabnormals.buzzier_bees.core.registry.BBMobEffects;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
